@@ -17,7 +17,7 @@ def find_dupicate_chars_count(s: str) -> dict:
         
 print(find_dupicate_chars_count("Hello Hi Pond!"))
 
-
+#--------------------------------------------------------------------------------
 
 def find_pair_with_product(nums: list, target: int) -> list:
     number = []

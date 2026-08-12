@@ -10,4 +10,3 @@ def separate_even_odd(numbers: list[int]) -> tuple[list[int], list[int]]:
     return (even_num, odd_num)
 
 print(separate_even_odd([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
-        

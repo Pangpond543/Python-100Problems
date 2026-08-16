@@ -1,7 +1,7 @@
 def word_frequency(text: str) -> dict:
-    dict = {}
-    
     list_s = text.lower().split()
+    
+    dict = {}
     for w in list_s:
         if w in dict:
             dict[w] += 1

@@ -22,15 +22,31 @@ def analyze_purchases(purchases: list) -> dict:
             
     for cut, cat_dict in cust.items():
         for cat, pro_dict in cat_dict.items():
-            result[cat]
+            result[cut] = {}
+            total = 0
             for pro, value in pro_dict.items():
                 if value >= 2:
-                    total =
+                    total += value
+            if total > 0:       # เช็ค ถ้าไม่่ใช่ค่าซํ้า ก็มีแค่ result[cut] = {}
+                result[cut][cat] = total
                 
-        
-            
+    most = {}
     
-    return product
+    for cat, pro_dict in product.items():
+        max = 0
+        best = ""
+        for pro, value in pro_dict.items():
+            if value > max:
+                max = value
+                best = pro
+            elif value == max:
+                best = pro
+        most[cat] = best
+        
+    result["Most_frequent"] = most
+    
+    return result
+        
         
 purchases = [
     ("cust1", "electronics", "labtop"),

@@ -20,7 +20,7 @@ def build_set_2() -> set[int]:
     while len(int_set) < 5:
         num = int(input("Enter number: "))
 
-        while num in int_set:
+        while num in int_set:   #วนจนกว่าเลขจะไม่ได้อยู่ใน int_set
             num = int(input("Please enter a different number: "))
 
         int_set.add(num)

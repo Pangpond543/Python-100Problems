@@ -4,7 +4,7 @@ def find_words_of_length(words: list[str], length: int) -> list[str]:
         count = 0
         for c in w:
             count += 1
-        if count == 5:
+        if count == length:
             result.append(w)
     return result
 

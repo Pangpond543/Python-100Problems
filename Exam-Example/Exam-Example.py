@@ -28,4 +28,4 @@ def find_pair_with_product(nums: list, target: int) -> list:
                 
     return number
 
-#print(find_pair_with_product([-1,-2, 2], 4))
+print(find_pair_with_product([-1,-2, 2], 4))
